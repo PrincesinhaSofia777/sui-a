@@ -1,1 +1,146 @@
-/* Add styles here */
+* {
+    color: rgb(18, 18, 19);
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Inter", sans-serif;
+}
+
+
+body.cadastro-page {
+    background-image: url('DSC_0298.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+body.login-page {
+    position: relative;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    background-image: url('DSC_0298.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+body.login-page::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    z-index: 0;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+fieldset {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    width: 20rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    padding-inline: 2rem;
+    gap: 1rem;
+    border-radius: 3rem;
+    position: relative;
+    border: none;
+}
+
+
+
+input[type="text"],
+input[type="password"] {
+    background-color: #e2e2e2;
+    color: gray;
+    border: 1px solid #ccc;
+    border-radius: .5rem;
+    padding: 0.5rem 1rem;
+    width: 90%;
+    font-size: 1rem;
+}
+
+#botao {
+    background-color: #D32F2F;
+    color: aliceblue;
+    border: none;
+    border-radius: 1.5rem;
+    width: 10rem;
+    line-height: 3rem;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: 0.4s;
+}
+
+#botao {
+    display: inline-block;
+    text-decoration: none;
+}
+
+#botaol {
+    background-color: #1976D2;
+    color: aliceblue;
+    border: none;
+    border-radius: 1.5rem;
+    width: 10rem;
+    line-height: 3rem;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: 0.4s;
+}
+
+#botaol {
+    display: inline-block;
+    text-decoration: none;
+}
+
+#botaol:hover {
+    background-color: #0c4280;
+  }
+
+#botao:hover {
+    background-color: #B71C1C;
+  }
+
+
+
+.quadrado {
+    background-color: white;
+    padding-top: 4rem;
+    padding-bottom: 2rem;
+    padding-inline: 2rem;
+    width: 20rem;
+    border-radius: 3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    position: relative;
+    z-index: 1;
+}
+
+.fotodeperfil {
+    position: absolute;
+    top: -4rem;
+    display: flex;
+    justify-content: center;
+}
+
+.fotodeperfil img {
+    width: 8rem;
+    border-radius: 50%;
+}  
