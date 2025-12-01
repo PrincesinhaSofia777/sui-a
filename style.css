@@ -144,3 +144,21 @@ input[type="password"] {
     width: 8rem;
     border-radius: 50%;
 }  
+
+:root {
+    --color-black: #000;
+    --color-dark-blue: #0c4280;
+    --color-primary-blue: #1976d2;
+    --color-dark-gray-1: #1a1a1a;
+    --color-dark-gray-2: #1d1b1b;
+    --color-green-soft: #8cd48a;
+    --color-red-dark: #b71c1c;
+    --color-gray-light-1: #cabe;
+    --color-gray-light-2: #ccc;
+    --color-red-primary: #d32f2f;
+    --color-gray-light-3: #dde7f0;
+    --color-gray-light-4: #e2e2e2;
+    --color-red-soft: #e48a8a;
+    --color-gray-light-5: #e8f1f8;
+    --color-gray-light-6: #f4f4f4;
+}
