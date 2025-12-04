@@ -1,85 +1,244 @@
 * {
-    text-decoration: none;
-    text-align: center;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    
+    text-decoration: none;
+    font-family: "Open Sans", sans-serif;
+}
+
+body {
+    font-family: "Open Sans", sans-serif;
+    background: #e9e9e9;
+    color: #111
 }
 
 header {
-    
     position: fixed;
+    top: 0;
+    left: 0;
     width: 100%;
-    padding-block: 2rem;
+    z-index: 10
 }
 
 #Cabeçalho {
-    
-
-    background-color: rgb(194, 219, 219);
+    background: #c2dbdb;
     height: 125px;
-    margin: 0 auto;
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center
 }
 
-a {
-    color: rgb(212, 22, 38);
-    align-items: center;
-    padding-inline: 20px;
-    padding-top: 50px;
+#Cabeçalho nav {
+    display: flex;
+    gap: 18px;
+    margin-bottom: 6px
 }
 
-h1 {
-   padding-top: 27px;
+#Cabeçalho nav a {
+    color: #2a6b6b;
+    font-weight: 600;
+    font-size: 0.95rem
+}
+
+#Cabeçalho h1 {
     font-size: 4.5rem;
+    font-weight: 800;
+    font-style: italic;
+    margin-top: 6px
 }
 
-img{
-    padding-top: 10rem;
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 170px 24px 60px 24px
 }
 
-#h2_1{
-   text-align: left;
-    padding-top: 6rem;
-    margin-left: 5rem;
+.top-emblem {
+    display: block;
+    margin: 0 auto 18px auto;
+    width: 220px;
+    height: 220px;
+    object-fit: contain;
+    border-radius: 22px;
+    background: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08)
 }
 
-#curiosidades_2{
+.top-emblem img {
+    width: 78%;
+    height: auto
+}
+
+h2.section-title {
+    font-size: 1.2rem;
+    font-weight: 700;
+    margin-top: 12px;
+    margin-bottom: 12px
+}
+
+p.lead {
+    font-size: 0.95rem;
+    line-height: 1.6;
     text-align: left;
-    margin-left: 5rem;
-  
+    color: #222;
+    margin-bottom: 26px
 }
 
-#curiosidades_1{
-text-align: left;
-margin-left: 5rem;
+.idiomas {
+    margin-top: 18px
 }
 
-#bandeira{
-width: 300px;
-
-
+.flags-row {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    align-items: flex-end;
+    margin-top: 18px
 }
 
+.flag-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    width: 32%
+}
 
-hr{
-    width: 75rem;
-    margin-left: 5rem;
-    margin-right: 5rem;
-   }
+.flag-item img {
+    width: 100%;
+    max-width: 170px;
+    border-radius: 6px;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08)
+}
 
-   #curiosidades_3{
+.flag-item p {
+    font-weight: 700;
+    margin-top: 4px
+}
 
-    text-align: left; 
-    margin-left: 5rem;
-    margin-right: 5rem;
-    padding-top: 2rem;
-   }
+hr.sep {
+    height: 3px;
+    border: 0;
+    background: #111;
+    margin: 28px 0 18px 0
+}
 
+.cultura {
+    display: grid;
+    grid-template-columns: 1fr 360px;
+    gap: 28px;
+    align-items: start
+}
 
-   #h2_0{
-    padding-top: 5rem;
-   }
+.cultura p {
+    font-size: 0.95rem;
+    line-height: 1.7;
+    color: #222
+}
+
+.cultura .cultura-img {
+    width: 100%;
+    max-width: 360px;
+    border-radius: 12px;
+    overflow: hidden
+}
+
+.cultura .cultura-img img {
+    width: 100%;
+    display: block
+}
+
+.caption {
+    font-size: 0.85rem;
+    color: #444;
+    margin-top: 8px;
+    text-align: left;
+    font-style: italic
+}
+
+.leis {
+    margin-top: 26px;
+    text-align: left
+}
+
+.leis h3 {
+    font-size: 1.6rem;
+    margin-bottom: 8px
+}
+
+.leis p {
+    font-size: 0.95rem;
+    line-height: 1.6;
+    margin-bottom: 12px
+}
+
+.leis .item {
+    margin-bottom: 14px
+}
+
+.leis .item h4 {
+    font-size: 1rem;
+    margin-bottom: 6px
+}
+
+.home-icon {
+    width: 4rem;
+    position: fixed;
+    left: 18px;
+    bottom: 16px;
+    background: #000;
+    color: #fff;
+    border-radius: 6px;
+    padding: 8px 10px;
+    font-size: 14px
+}
+
+@media(max-width:880px) {
+    #Cabeçalho h1 {
+        font-size: 3rem
+    }
+
+    .cultura {
+        grid-template-columns: 1fr;
+        gap: 18px
+    }
+
+    .flags-row {
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 14px
+    }
+
+    .flag-item {
+        width: 30%
+    }
+
+    .top-emblem {
+        width: 170px;
+        height: 170px
+    }
+}
+
+@media(max-width:560px) {
+    .container {
+        padding: 150px 14px 60px
+    }
+
+    .flag-item {
+        width: 48%
+    }
+
+    #Cabeçalho nav {
+        flex-wrap: wrap;
+        gap: 10px
+    }
+
+    .top-emblem {
+        width: 150px;
+        height: 150px
+    }
+}
